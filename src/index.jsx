@@ -3,13 +3,12 @@ import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 // import Experience from './Experience.jsx'
-import Chart from "./Chart";
+import Sun from "./Sun.jsx";
+import Spikey from "./Spikey.jsx";
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 root.render(
   <>
-    
-
     <Canvas
       camera={{
         fov: 45,
@@ -18,9 +17,10 @@ root.render(
         position: [-4, 3, 6],
       }}
     >
-        <OrbitControls makeDefault />
+      <OrbitControls makeDefault />
       {/* <Experience /> */}
-      <Chart />
+      <Sun />
+      {/* <Spikey /> */}
     </Canvas>
   </>
 );
